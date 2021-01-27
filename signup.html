@@ -36,7 +36,7 @@
     <!-- registrtion form-->
     <div class="col-lg-5 tborder formMarginMy"  >
         <h5>Register with us for latest updates and attractive packages</h5>
-    <form class="row g-3" action="#" onsubmit="return signinValidation() && phoneNumbervalidation()" >
+    <form class="row g-3" action="#" onsubmit="return signinValidation()&&validatePassword() &&phoneNumbervalidation()" >
         <div class="col-12">
           <label for="inputEmail4" class="form-label">Email</label>
           <!-- <input type="email" class="form-control" id="inputEmail4"> -->
@@ -47,7 +47,14 @@
           <div class="col-12">
           <label for="inputPassword4" class="form-label">Password <div class="infotext">(Minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number)</div></label>
           <input type="password" class="form-control" id="inputPassword4" >
-          <label id="errormsgpwd">qa password</label>
+          <!-- indicator display-->
+          <div class="inidcator">
+            <span class="weak">1</span>
+            <span class="medium">2</span>
+            <span class="Strong">3</span>
+          </div>
+          <!-- indicator display-->
+          <label id="errormsgpwd"></label>
         </div>
         <div class="col-12">
           <label for="inputphonenumber" class="form-label">Phone number</label>
@@ -60,7 +67,7 @@
         </div>
         <div class="col-12">
           <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="r">
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">City</label>
