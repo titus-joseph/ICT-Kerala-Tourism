@@ -5,7 +5,7 @@ function signinvalidation(){
 
     }
 
-// function to validate the email in signup page;
+// function to validate the email in signup page 1;
 
 
 function signinValidation()
